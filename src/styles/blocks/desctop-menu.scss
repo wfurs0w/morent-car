@@ -1,0 +1,73 @@
+.desctop {
+  display: none;
+
+  @include onDesctop {
+    display: block;
+  }
+}
+
+.nav-menu {
+  max-width: 1340px;
+  margin: 0 auto;
+  position: relative;
+
+  &__photo {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 34px;
+    right: 25px;
+     
+    & img{
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  &__form {
+    position: relative;
+    width: 492px;
+  }
+
+  &__input-control {
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    padding-left: 30px;
+    border-radius: 70px;
+    height: 44px;
+  }
+
+  &__icon {
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+}
+
+.navbar-nav {
+  width: 40%;
+}
+
+.tune {
+  position: absolute;
+  display: block;
+  border-radius: 10px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+}
+
+.search-loop {
+  position: absolute;
+  display: block;
+  left: 20px;
+  width: 19px;
+  height: 19px;
+  line-height: 44px;
+  text-align: center;
+  color: #aaa;
+}
