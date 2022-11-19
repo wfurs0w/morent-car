@@ -2,7 +2,8 @@
 @import "./utils/mixins";
 @import "./utils/normalize";
 
-@import "./blocks/logo.scss";
-@import "./blocks/header.scss";
-@import "./blocks/desctop-menu.scss";
-@import "./blocks/mobile-menu.scss";
+@import "./blocks/logo/logo.scss";
+@import "./blocks/header/header.scss";
+@import "./blocks/desctop-menu/desctop-menu.scss";
+@import "./blocks/mobile-menu/mobile-menu.scss";
+@import "./blocks/aside/aside.scss";
