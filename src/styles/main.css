@@ -15,6 +15,7 @@ div,
 ul {
   margin: 0;
   padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .logo {
@@ -22,7 +23,6 @@ ul {
   height: 96px;
   text-decoration: none;
   font-weight: 700;
-  font-family: 'Plus Jakarta Sans', sans-serif;
   line-height: 96px;
   display: block;
 }
@@ -75,7 +75,7 @@ ul {
 
 .nav-menu__input-control {
   border: 1px solid rgba(195, 212, 233, 0.4);
-  padding-left: 30px;
+  padding-left: 35px;
   border-radius: 70px;
   height: 44px;
 }
@@ -139,12 +139,13 @@ ul {
 
 .filter-icon {
   width: 44px;
+  height: 44px;
 }
 
 .search-loop {
   position: absolute;
   display: block;
-  left: 20px;
+  left: 26px;
   width: 19px;
   height: 19px;
   line-height: 44px;
@@ -204,5 +205,71 @@ ul {
   position: absolute;
   top: 30px;
   right: 25px;
+}
+
+.aside {
+  width: 360px;
+  border-right: 1px solid #F3F5F7;
+  padding: 32px;
+  display: none;
+}
+
+@media (min-width: 950px) {
+  .aside {
+    display: block;
+  }
+}
+
+.aside__title {
+  color: #94A7CB;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.aside__checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #90A3BF;
+}
+
+.aside__label {
+  font-weight: 600;
+  color: #3D5278;
+  margin-left: 10px;
+}
+
+.aside__label span {
+  color: #90A3BF;
+}
+
+.aside__last {
+  margin-bottom: 56px;
+}
+
+.aside__progress {
+  position: relative;
+  height: 12px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.aside__progress img {
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  right: 24%;
+  top: -3px;
+}
+
+.text {
+  font-weight: 600;
+  color: #3D5278;
+}
+
+.main {
+  background-color: #F6F7F9;
 }
 /*# sourceMappingURL=main.css.map */

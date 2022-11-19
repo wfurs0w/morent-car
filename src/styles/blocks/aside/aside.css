@@ -1,0 +1,56 @@
+.aside {
+  width: 360px;
+  border-right: 1px solid #F3F5F7;
+  padding: 32px;
+  display: none;
+}
+
+.aside__title {
+  color: #94A7CB;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.aside__checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #90A3BF;
+}
+
+.aside__label {
+  font-weight: 600;
+  color: #3D5278;
+  margin-left: 10px;
+}
+
+.aside__label span {
+  color: #90A3BF;
+}
+
+.aside__last {
+  margin-bottom: 56px;
+}
+
+.aside__progress {
+  position: relative;
+  height: 12px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.aside__progress img {
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  right: 24%;
+  top: -3px;
+}
+
+.text {
+  font-weight: 600;
+  color: #3D5278;
+}
+/*# sourceMappingURL=aside.css.map */
