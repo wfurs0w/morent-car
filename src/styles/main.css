@@ -1,0 +1,208 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  color: #3563E9;
+  height: 96px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 96px;
+  display: block;
+}
+
+.header {
+  padding-bottom: 32px;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+}
+
+@media (min-width: 950px) {
+  .header {
+    height: 124px;
+    padding-bottom: 0;
+  }
+}
+
+.desctop {
+  display: none;
+}
+
+@media (min-width: 950px) {
+  .desctop {
+    display: block;
+  }
+}
+
+.nav-menu {
+  max-width: 1340px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav-menu__photo {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 34px;
+  right: 25px;
+}
+
+.nav-menu__photo img {
+  width: 44px;
+  height: 44px;
+}
+
+.nav-menu__form {
+  position: relative;
+  width: 492px;
+}
+
+.nav-menu__input-control {
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  padding-left: 30px;
+  border-radius: 70px;
+  height: 44px;
+}
+
+.nav-menu__input-control::-webkit-input-placeholder {
+  color: #3D5278;
+}
+
+.nav-menu__input-control:-ms-input-placeholder {
+  color: #3D5278;
+}
+
+.nav-menu__input-control::-ms-input-placeholder {
+  color: #3D5278;
+}
+
+.nav-menu__input-control::placeholder {
+  color: #3D5278;
+}
+
+.nav-menu__icon {
+  width: 44px;
+  height: 44px;
+  position: relative;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+
+.bell::before {
+  content: url(../images/Notif.svg);
+  position: absolute;
+  top: -7px;
+  right: 8px;
+  display: block;
+  width: 4px;
+  height: 4px;
+}
+
+.navbar-nav {
+  width: 40%;
+}
+
+.tune {
+  position: absolute;
+  display: block;
+  border-radius: 10px;
+  right: 40px;
+  width: 48px;
+  height: 48px;
+}
+
+.filter-icon {
+  width: 44px;
+}
+
+.search-loop {
+  position: absolute;
+  display: block;
+  left: 20px;
+  width: 19px;
+  height: 19px;
+  line-height: 44px;
+  text-align: center;
+  color: #aaa;
+}
+
+.mobile {
+  display: block;
+  position: relative;
+  padding-top: 30px;
+}
+
+@media (min-width: 950px) {
+  .mobile {
+    display: none !important;
+  }
+}
+
+.mobile__form {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.mobile__input {
+  height: 48px;
+  border-radius: 10px;
+}
+
+.mobile__input ::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+.mobile__input :-ms-input-placeholder {
+  font-size: 14px;
+}
+
+.mobile__input ::-ms-input-placeholder {
+  font-size: 14px;
+}
+
+.mobile__input ::placeholder {
+  font-size: 14px;
+}
+
+.mobile__btn {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  border-radius: 10px;
+}
+
+.mobile__photo {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 30px;
+  right: 25px;
+}
+/*# sourceMappingURL=main.css.map */
