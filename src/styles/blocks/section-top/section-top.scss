@@ -1,11 +1,11 @@
 .main {
-  @include onDesctop {
+  @include onTablet{
     padding-right: 25px;
   }
 }
 .section-container {
   width: 90%;
-  margin: 0 auto;
+  margin: 32px auto;
 
   @include onDesctop {
     width: 72%;
@@ -117,16 +117,24 @@
 
     @include onTablet {
       width: 45%;
+      margin: 0;
     }
 
     @include onDesctop {
-      height: fit-content;
-      margin: 0;
+      height: 100%;
     }
   }
 
   &__title-block {
     width: 100%;
+
+    h2 {
+      font-size: 20px;
+
+      @include onDesctop {
+        font-size: 32px;
+      }
+    }
   }
 
   &__start-block {
