@@ -89,7 +89,7 @@
       display: none;
     }
   }
-  
+
   .on-desctop {
     display: none;
 
@@ -111,6 +111,7 @@
       width: 100px;
       font-size: 14;
       color: #90A3BF;
+      cursor: pointer;
 
       @include onDesctop {
         font-size: 16px;
