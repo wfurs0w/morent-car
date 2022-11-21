@@ -16,40 +16,44 @@
 </head>
 <body>
 <header class=header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white p-2 nav-menu desctop">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white p-2 desctop">
     <div class="container-fluid ">
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <a href="#" class="logo">MORENT</a> 
 
-        <div class="container-fluid nav-menu__form">
+        <div class="container-fluid desk-form">
           <form class="d-flex form">
             <span class="search-loop" >
               <img src="./images/search-normal.svg" alt="img">
             </span>
             <input 
-              class="form-control me-2 nav-menu__input-control" 
+              class="form-control me-2 input-control" 
               type="search" 
               placeholder="Search something here" 
               aria-label="Search"
             >
             <button class="btn tune" type="submit">
-              <img class="filter-icon" src="./images/filter.svg" alt="icon">
+              <img 
+                class="filter-icon" 
+                src="./images/filter.svg" 
+                alt="icon"
+              >
             </button>
           </form>
         </div>
 
         <ul class="navbar-nav mx-4 px-4 d-flex justify-content-end">
-          <li class="nav-item nav-menu__icon">
+          <li class="nav-item icon">
             <a href="#">
               <img src="./images/Vector.svg" alt="img">
             </a>
           </li>
-          <li class="nav-item nav-menu__icon bell">
+          <li class="nav-item icon bell">
             <a href="#">
               <img src="./images/Vector-bell.svg" alt="img">
             </a> 
           </li>
-          <li class="nav-item nav-menu__icon">
+          <li class="nav-item icon">
             <a href="#">
               <img src="./images/Vector-settings.svg" alt="img">
             </a>
@@ -58,7 +62,7 @@
       </div>
     </div>
    
-    <div class="nav-menu__photo">
+    <div class="photo">
       <img src="./images/Image.svg" alt="img">
     </div>
   </nav>
@@ -83,20 +87,24 @@
     </div>
     <a href="#" class="logo px-3">MORENT</a> 
 
-    <form class="d-flex px-3 mobile__form">
+    <form class="d-flex px-3 form">
       <span class="search-loop" >
         <img src="./images/search-normal.svg" alt="img">
       </span>
       <input 
-        class="form-control me-2 nav-menu__input-control mobile__input" 
+        class="form-control me-2 input-control form-mob-input" 
         type="search" 
         placeholder="Search something here" 
         aria-label="Search">
-      <button class="btn mobile__btn px-0" type="submit">
-        <img class="filter-icon" src="./images/filter.svg" alt="img">
+      <button class="btn mob-btn px-0" type="submit">
+        <img 
+          class="filter-icon" 
+          src="./images/filter.svg" 
+          alt="img"
+        >
       </button>
     </form>
-    <div class="nav-menu__photo mobile__photo">
+    <div class="photo mob-photo">
       <img src="./images/Image.svg" alt="img">
     </div>
   </nav>
@@ -104,7 +112,7 @@
 
 <main class="bg-light d-flex main">
   <aside class="aside bg-white me-4">
-    <p class="aside__title mb-4">
+    <p class="title mb-4">
       type
     </p>
 
@@ -183,7 +191,7 @@
       </label>
     </div>
 
-    <p class="aside__title mb-4">
+    <p class="title mb-4">
       capacity
     </p>
 
@@ -238,7 +246,7 @@
       </label>
     </div>
 
-    <p class="aside__title mb-4">
+    <p class="title mb-4">
       price
     </p>
 
@@ -252,23 +260,23 @@
 
   <div class="section-container">
     <section class="section-top">
-      <div class="section-top__img-block">
-        <div class="section-top__img-container">
+      <div class="img-block">
+        <div class="img-container">
           <img w-100 class="img-fluid" src="./images/View.svg">
         </div>
-        <div class="section-top__img-small-container d-flex justify-content-between">
-          <div class="section-top__small-img1"></div>
-          <div class="section-top__small-img2"></div>
-          <div class="section-top__small-img3"></div>
+        <div class="img-small-container d-flex justify-content-between">
+          <div class="small-img1"></div>
+          <div class="small-img2"></div>
+          <div class="small-img3"></div>
         </div>
       </div>
 
-      <div class="section-top__right-block p-3">
-        <div class="section-top__title-block d-flex justify-content-between">
+      <div class="right-block p-3">
+        <div class="title-block d-flex justify-content-between">
           <h2 class="fw-bolder">Nissan GT - R</h2>
           <img src="./images/red-hard.svg">
         </div>
-        <div class="section-top__start-block mb-4">
+        <div class="start-block mb-4">
           <img src="./images/golden-star.svg" alt="star">
           <img src="./images/golden-star.svg" alt="star">
           <img src="./images/golden-star.svg" alt="star">
@@ -277,7 +285,7 @@
           <span>440+ Reviewer</span>
         </div>
 
-        <p class="section-top__description mb-4">
+        <p class="description mb-4">
           NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the "race track".
         </p>
         <div class="d-flex justify-content-between mb-2">
@@ -295,12 +303,12 @@
         </div>
 
         <div class="d-flex justify-content-between mb-2">
-          <div class="section-top__price">
-            <p class="fw-bold text-black section-top__price-bold">
+          <div class="price">
+            <p class="fw-bold text-black price-bold">
               $80.00/ 
               <span>days</span>
             </p>
-            <p class="text-decoration-line-through fw-bold section-top__price-gray">
+            <p class="text-decoration-line-through fw-bold price-gray">
               $100.00
             </p>
           </div>
@@ -419,7 +427,6 @@
           src="./images/check.svg"
         >
           <span class="d-inline-block text-center">Show All</span>
-        </select>
       </div>
     </section>
   </div> 

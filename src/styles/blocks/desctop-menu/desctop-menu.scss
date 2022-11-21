@@ -2,45 +2,45 @@
   display: none;
 
   @include onDesctop {
+    max-width: 1340px;
+    margin: 0 auto;
+    position: relative;
     display: block;
   }
-}
 
-.nav-menu {
-  max-width: 1340px;
-  margin: 0 auto;
-  position: relative;
-
-  &__photo {
+  .photo {
     width: 44px;
     height: 44px;
     position: absolute;
     top: 34px;
     right: 25px;
-     
-    & img {
+
+    img {
       width: 44px;
       height: 44px;
     }
   }
 
-  &__form {
+  .desk-form {
     position: relative;
     width: 492px;
-  }
 
-  &__input-control {
-    border: 1px solid rgba(195, 212, 233, 0.4);
-    padding-left: 45px;
-    border-radius: 70px;
-    height: 44px;
+    .tune {
+      position: absolute;
+      display: block;
+      border-radius: 10px;
+      right: 35px;
+      width: 48px;
+      height: 48px;
+    }
 
-    &::placeholder {
-      color: #3D5278;
+    .filter-icon {
+      width: 24px;
+      height: 24px;
     }
   }
 
-  &__icon {
+  .icon {
     width: 44px;
     height: 44px;
     position: relative;
@@ -51,34 +51,32 @@
     align-items: center;
     margin-right: 20px;
   }
+
+
+  .bell::before {
+    content: url(../images/Notif.svg);
+    position: absolute;
+    top: -7px;
+    right: 8px;
+    display: block;
+    width: 4px;
+    height: 4px;
+  }
+
+  .navbar-nav {
+    width: 40%;
+  }
 }
 
-.bell::before {
-  content: url(../images/Notif.svg);
-  position: absolute;
-  top: -7px;
-  right: 8px;
-  display: block;
-  width: 4px;
-  height: 4px;
-}
+.input-control {
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  padding-left: 45px;
+  border-radius: 70px;
+  height: 44px;
 
-.navbar-nav {
-  width: 40%;
-}
-
-.tune {
-  position: absolute;
-  display: block;
-  border-radius: 10px;
-  right: 35px;
-  width: 48px;
-  height: 48px;
-}
-
-.filter-icon {
-  width: 24px;
-  height: 24px;
+  &::placeholder {
+    color: #3D5278;
+  }
 }
 
 .search-loop {
