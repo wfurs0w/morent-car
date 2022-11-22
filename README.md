@@ -10,3 +10,8 @@ Rent Car landing page, implemented by the Bootstrap library, in two sizes: mobil
 - Clone project
 - Run npm install
 - Run npm start 
+- 
+## Technologies
+- HTML
+- SCSS
+- CSS
