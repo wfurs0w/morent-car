@@ -1,0 +1,142 @@
+.cards-container {
+  display: none;
+
+  @include onTablet {
+    display: block;
+  }
+
+  .title {
+    color: #90A3BF;
+    font-weight: 600;
+  }
+}
+
+.card-block {
+  width: 30%;
+
+  .car-name {
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+
+    @include onDesctop {
+      font-size: 20px;
+    }
+  }
+
+  .heard {
+    width: 20px;
+    height: 17px;
+  }
+
+  .car-model {
+    font-weight: 700;
+    font-size: 14px;
+    color: #90A3BF;
+    margin-bottom: 52px;
+  }
+
+  .car-img {
+    margin-bottom: 52px;
+  }
+
+  .car-img2 {
+    height: 112px;
+  }
+
+  .spesification {
+    color: #90A3BF;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+
+    @include onDesctop {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .icon {
+      width: 12px;
+      height: 12px;
+
+      @include onDesctop {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .price {
+      span {
+        color: #90A3BF;
+        font-size: 10px;
+  
+        @include onDesctop {
+         font-size: 12px;
+        }
+      }
+      
+      .price-gray {
+        font-size: 10px;
+        color: #90A3BF;
+  
+        @include onDesctop {
+          font-size: 12px;
+        }
+      }
+
+      .price-bold {
+        font-size: 16px;
+        font-weight: 700;
+
+        @include onTablet {
+          font-size: 12px;
+        }
+    
+        @include onDesctop {
+          font-size: 20px;
+        }
+      }
+    }
+
+    button {
+      width: 99px;
+      height: 44px;
+
+      @include onTablet {
+        font-size: 12px;
+        line-height: 12px;
+        width: 53px;
+      }
+
+      @include onDesctop {
+        width: 99px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.carousel-mobile {
+  display: block;
+
+  @include onTablet {
+    display: none !important;
+  }
+}
+
+.title-slider-block {
+  .title-slider {
+    color: #90A3BF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+  
+    & + span {
+      font-size: 12px;
+    }
+  }
+
+  @include onTablet {
+    display: none !important;
+  }
+}
