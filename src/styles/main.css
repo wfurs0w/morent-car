@@ -810,6 +810,7 @@ ul {
 @media (min-width: 1280px) {
   .card-block .spesification button {
     width: 99px;
+    font-size: 12px;
   }
 }
 
@@ -840,11 +841,174 @@ ul {
   }
 }
 
-.red {
-  width: 20px;
-  height: 17px;
-  background-image: url(../images/red-hard.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+footer {
+  padding: 40px 30px 24px;
+  background: #F6F7F9;
+}
+
+@media (min-width: 768px) {
+  footer {
+    background: white;
+  }
+}
+
+@media (min-width: 1280px) {
+  footer {
+    padding: 80px 60px 60px;
+  }
+}
+
+footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 1280px) {
+  footer .footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+footer .footer-container .logo {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  line-height: 100%;
+}
+
+footer .footer-container .logo-block {
+  width: 100%;
+}
+
+@media (min-width: 1280px) {
+  footer .footer-container .logo-block {
+    width: 25%;
+  }
+}
+
+footer .footer-container .footer-text {
+  color: #90A3BF;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: -0.01em;
+}
+
+@media (min-width: 1280px) {
+  footer .footer-container .footer-text {
+    font-size: 16px;
+  }
+}
+
+footer .footer-container .info-block {
+  width: 100%;
+}
+
+@media (min-width: 1280px) {
+  footer .footer-container .info-block {
+    width: 46%;
+  }
+}
+
+footer .footer-container .info-block .info-header {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+footer .footer-container .info-block .about {
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  footer .footer-container .info-block .about {
+    width: 30%;
+  }
+}
+
+footer .footer-container .info-block .socials {
+  width: 28%;
+}
+
+@media (min-width: 1280px) {
+  footer .footer-container .info-block .socials {
+    width: 30%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+footer .footer-container .info-block .community {
+  width: 100%;
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  footer .footer-container .info-block .community {
+    width: 30%;
+    margin-top: 0;
+  }
+}
+
+footer .footer-container ul {
+  list-style: none;
+}
+
+footer .footer-container ul li {
+  cursor: pointer;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+footer .footer-container ul li:hover {
+  color: #000;
+}
+
+footer hr {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  footer hr {
+    display: block;
+  }
+}
+
+footer .privacy {
+  width: 100%;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  footer .privacy {
+    width: 30%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+footer .rights {
+  width: 100%;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  footer .rights {
+    width: 30%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
