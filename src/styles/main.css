@@ -677,4 +677,174 @@ ul {
     font-size: 16px;
   }
 }
+
+.cards-container {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .cards-container {
+    display: block;
+  }
+}
+
+.cards-container .title {
+  color: #90A3BF;
+  font-weight: 600;
+}
+
+.card-block {
+  width: 30%;
+}
+
+.card-block .car-name {
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+@media (min-width: 1280px) {
+  .card-block .car-name {
+    font-size: 20px;
+  }
+}
+
+.card-block .heard {
+  width: 20px;
+  height: 17px;
+}
+
+.card-block .car-model {
+  font-weight: 700;
+  font-size: 14px;
+  color: #90A3BF;
+  margin-bottom: 52px;
+}
+
+.card-block .car-img {
+  margin-bottom: 52px;
+}
+
+.card-block .car-img2 {
+  height: 112px;
+}
+
+.card-block .spesification {
+  color: #90A3BF;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+@media (min-width: 1280px) {
+  .card-block .spesification {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.card-block .spesification .icon {
+  width: 12px;
+  height: 12px;
+}
+
+@media (min-width: 1280px) {
+  .card-block .spesification .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.card-block .spesification .price span {
+  color: #90A3BF;
+  font-size: 10px;
+}
+
+@media (min-width: 1280px) {
+  .card-block .spesification .price span {
+    font-size: 12px;
+  }
+}
+
+.card-block .spesification .price .price-gray {
+  font-size: 10px;
+  color: #90A3BF;
+}
+
+@media (min-width: 1280px) {
+  .card-block .spesification .price .price-gray {
+    font-size: 12px;
+  }
+}
+
+.card-block .spesification .price .price-bold {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .card-block .spesification .price .price-bold {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .card-block .spesification .price .price-bold {
+    font-size: 20px;
+  }
+}
+
+.card-block .spesification button {
+  width: 99px;
+  height: 44px;
+}
+
+@media (min-width: 768px) {
+  .card-block .spesification button {
+    font-size: 12px;
+    line-height: 12px;
+    width: 53px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .card-block .spesification button {
+    width: 99px;
+  }
+}
+
+.carousel-mobile {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .carousel-mobile {
+    display: none !important;
+  }
+}
+
+.title-slider-block .title-slider {
+  color: #90A3BF;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.title-slider-block .title-slider + span {
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .title-slider-block {
+    display: none !important;
+  }
+}
+
+.red {
+  width: 20px;
+  height: 17px;
+  background-image: url(../images/red-hard.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 /*# sourceMappingURL=main.css.map */
