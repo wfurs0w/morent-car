@@ -1,0 +1,129 @@
+footer {
+  padding: 40px 30px 24px;
+  background: #F6F7F9;
+
+  @include onTablet {
+    background: white;
+  }
+
+  @include onDesctop {
+    padding: 80px 60px 60px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include onDesctop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .logo {
+      height: fit-content;
+      line-height: 100%;
+    }
+  
+    .logo-block {
+      width: 100%;
+
+      @include onDesctop {
+        width: 25%;
+      }
+    }
+  
+    .footer-text {
+      color: #90A3BF;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 200%;
+      letter-spacing: -0.01em;
+
+      @include onDesctop {
+        font-size: 16px;
+      }
+    }
+
+    .info-block {
+      width: 100%;
+
+      @include onDesctop {
+        width: 46%;
+      }
+
+      .info-header {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+      }
+
+      .about {
+        width: 50%;
+
+        @include onTablet {
+          width: 30%;
+        }
+      }
+
+      .socials {
+        width: 28%;
+
+        @include onDesctop {
+          width: 30%;
+          order: 1;
+        }
+      }
+
+      .community {
+        width: 100%;
+        margin-top: 40px;
+
+        @include onTablet {
+          width: 30%;
+          margin-top: 0;
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        cursor: pointer;
+        transition: color 1s;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+
+  hr {
+    display: none;
+
+    @include onTablet {
+      display: block;
+    }
+  }
+
+  .privacy {
+    width: 100%;
+    font-size: 12px;
+
+    @include onTablet {
+      width: 30%;
+      order: 1;
+    }
+  }
+
+  .rights {
+    width: 100%;
+    font-size: 12px;
+
+    @include onTablet {
+      width: 30%;
+    }
+  }
+}
