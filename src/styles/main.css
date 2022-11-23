@@ -241,6 +241,7 @@ ul {
   width: 20px;
   height: 20px;
   border: 1px solid #90A3BF;
+  cursor: pointer;
 }
 
 .aside__label {
@@ -258,20 +259,9 @@ ul {
   margin-bottom: 56px;
 }
 
-.aside__progress {
-  position: relative;
+.aside__range {
   height: 12px;
-  border-radius: 14px;
   margin-bottom: 16px;
-}
-
-.aside__progress img {
-  position: absolute;
-  display: block;
-  width: 18px;
-  height: 18px;
-  right: 24%;
-  top: -3px;
 }
 
 .aside .text {

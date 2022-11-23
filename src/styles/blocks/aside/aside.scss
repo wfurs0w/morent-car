@@ -39,20 +39,9 @@
     margin-bottom: 56px;
   }
 
-  &__progress {
-    position: relative;
+  &__range {
     height: 12px;
-    border-radius: 14px;
     margin-bottom: 16px;
-
-    img {
-      position: absolute;
-      display: block;
-      width: 18px;
-      height: 18px;
-      right: 24%;
-      top: -3px;
-    }
   }
 
   .text {
