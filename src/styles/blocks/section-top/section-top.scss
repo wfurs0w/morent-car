@@ -5,6 +5,7 @@
 }
 .section-container {
   width: 90%;
+  max-width: 1100px;
   margin: 32px auto;
 
   @include onDesctop {
@@ -29,6 +30,7 @@
   
     .img-block {
       width: 327px;
+      max-width: 492px;
       min-height: 320px;
       margin: 0 auto 32px;
       position: relative;
@@ -36,6 +38,7 @@
       @include onTablet {
         margin: 0;
         width: 49%;
+        
       }
   
       .img-container {

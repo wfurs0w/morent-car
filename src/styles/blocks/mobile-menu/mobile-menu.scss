@@ -7,6 +7,16 @@
     display: none !important;
   }
 
+  a {
+    color: $navy-blue;
+    cursor: pointer;
+    transition: color 1s;
+
+    &:hover {
+      color: black;
+    }
+  }
+
   .form {
     position: relative;
     margin: 0 auto;

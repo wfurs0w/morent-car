@@ -9,7 +9,7 @@
     display: block;
   }
 
-  .title {
+  &__title {
     color: #94A7CB;
     font-weight: 600;
     font-size: 12px;
@@ -21,12 +21,14 @@
     width: 20px;
     height: 20px;
     border: 1px solid #90A3BF;
+    cursor: pointer;
   }
 
   &__label {
     font-weight: 600;
     color:#3D5278;
     margin-left: 10px;
+    cursor: pointer;
 
     span {
       color:#90A3BF;

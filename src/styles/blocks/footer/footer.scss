@@ -14,6 +14,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 1200px;
 
     @include onDesctop {
       flex-direction: row;
@@ -108,22 +109,28 @@ footer {
     }
   }
 
-  .privacy {
-    width: 100%;
-    font-size: 12px;
-
-    @include onTablet {
-      width: 30%;
-      order: 1;
+  .tail {
+    max-width: 1200px;
+    
+    .privacy {
+      width: 100%;
+      font-size: 12px;
+  
+      @include onTablet {
+        width: 30%;
+        order: 1;
+      }
+    }
+  
+    .rights {
+      width: 100%;
+      font-size: 12px;
+  
+      @include onTablet {
+        width: 30%;
+      }
     }
   }
 
-  .rights {
-    width: 100%;
-    font-size: 12px;
-
-    @include onTablet {
-      width: 30%;
-    }
-  }
+  
 }
