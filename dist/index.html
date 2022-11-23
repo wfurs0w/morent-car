@@ -60,9 +60,32 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      </div>
+
+        <ul class="navbar-nav mx-4 px-4 d-flex justify-content-end">
+          <li class="nav-item icon mx-2">
+            <a class="text-decoration-none" href="#revievs">
+              Revievs
+            </a>
+          </li>
+          <li class="nav-item icon bell mx-2">
+            <a class="text-decoration-none" href="#recent">
+              Recent car
+            </a> 
+          </li>
+          <li class="nav-item icon mx-2">
+            <a class="text-decoration-none" href="#recomendation">
+              Recomendation car
+            </a>
+          </li>
+
+          <li class="nav-item icon mx-2">
+            <a class="text-decoration-none" href="#contacts">
+              Contacts
+            </a>
+          </li>
+      </ul></div>
     </div>
-    <a href="#" class="logo px-3">MORENT</a> 
+    <a href="#" class="logo px-3 text-primary">MORENT</a> 
 
     <form class="d-flex px-3 form">
       <span class="search-loop">
@@ -81,87 +104,87 @@
 
 <main class="bg-light d-flex main">
   <aside class="aside bg-white me-4">
-    <p class="title mb-4">
+    <p class="aside__title mb-4">
       type
     </p>
 
     <div class="form-check mb-4">
-      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="flexCheckChecked" checked="">
-      <label class="form-check-label aside__label" for="flexCheckChecked">
+      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="sport" checked="">
+      <label class="form-check-label aside__label" for="sport">
         Sport <span>(10)</span>
       </label>
     </div>
     <div class="form-check mb-4">
-      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="flexCheckChecked" checked="">
-      <label class="form-check-label aside__label" for="flexCheckChecked">
+      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="SUV" checked="">
+      <label class="form-check-label aside__label" for="SUV">
         SUV 
         <span>(12)</span>
       </label>
     </div>
     <div class="form-check mb-4">
-      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label aside__label" for="flexCheckDefault">
+      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="MPV">
+      <label class="form-check-label aside__label" for="MPV">
         MPV 
         <span>(16)</span>
       </label>
     </div>
     <div class="form-check mb-4">
-      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label aside__label" for="flexCheckDefault">
+      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="Sedan">
+      <label class="form-check-label aside__label" for="Sedan">
         Sedan
         <span>(20)</span>
       </label>
     </div>
     
     <div class="form-check mb-4">
-      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label aside__label" for="flexCheckDefault">
+      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="Coupe">
+      <label class="form-check-label aside__label" for="Coupe">
         Coupe 
         <span>(14)</span> 
       </label>
     </div>
     <div class="form-check aside__last">
-      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label aside__label" for="flexCheckDefault">
+      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="Hatchback">
+      <label class="form-check-label aside__label" for="Hatchback">
         Hatchback 
         <span>(14)</span>
       </label>
     </div>
 
-    <p class="title mb-4">
+    <p class="aside__title mb-4">
       capacity
     </p>
 
     <div class="form-check mb-4">
-      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="flexCheckChecked" checked="">
-      <label class="form-check-label aside__label" for="flexCheckChecked">
+      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="Person1" checked="">
+      <label class="form-check-label aside__label" for="Person1">
         2 Person 
         <span>(10)</span>
       </label>
     </div>
     <div class="form-check mb-4">
-      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label aside__label" for="flexCheckDefault">
+      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="Person2">
+      <label class="form-check-label aside__label" for="Person2">
         4 Person
         <span>(14)</span>
       </label>
     </div>
     <div class="form-check mb-4">
-      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label aside__label" for="flexCheckDefault">
+      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="Person3">
+      <label class="form-check-label aside__label" for="Person3">
         6 Person
         <span>(12)</span>
       </label>
     </div>
     <div class="form-check aside__last">
-      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="flexCheckChecked" checked="">
-      <label class="form-check-label aside__label" for="flexCheckChecked">
+      <input class="form-check-input aside__checkbox" type="checkbox" value="" id="Person4" checked="">
+      <label class="form-check-label aside__label" for="Person4">
         8 or More 
         <span>(16)</span>
       </label>
     </div>
 
-    <p class="title mb-4">
+    <p class="aside__title mb-4">
       price
     </p>
 
@@ -233,7 +256,7 @@
       </div>
     </section>
 
-    <section class="section-middle bg-white mb-4">
+    <section class="section-middle bg-white mb-4" id="revievs">
       <h2 class="fw-bolder mb-3">
         Reviews 
         <span class="d-inline-block bg-primary text-white count ms-2">
@@ -304,7 +327,7 @@
         </div>
 
         <div class="row g-4 gap-3 mb-5">
-          <div class="card col product-item mx-auto p-3 card-block border-0">
+          <div class="card col product-item mx-auto p-3 card-block desk-card border-0">
             <div class="d-flex justify-content-between">
               <span class="car-name">Koenigsegg</span>
               <img class="heard" src="/red-hard.90c92e71.svg">
@@ -339,7 +362,7 @@
             </div>
           </div>
   
-          <div class="card col product-item mx-auto p-3 card-block border-0">
+          <div class="card col product-item mx-auto p-3 card-block desk-card border-0">
             <div class="d-flex justify-content-between">
               <span class="car-name">Nissan GT - R</span>
               <img class="heard" src="/Vector-hard.48bbe5c1.svg">
@@ -377,7 +400,7 @@
             </div>
           </div>
   
-          <div class="card col product-item mx-auto p-3 card-block border-0">
+          <div class="card col product-item mx-auto p-3 card-block desk-card border-0">
             <div class="d-flex justify-content-between">
               <span class="car-name">Rolls-Royce</span>
               <img class="heard" src="/Vector-hard.48bbe5c1.svg">
@@ -412,14 +435,13 @@
             </div>
           </div> 
         </div>
-  
         <!-- second row -->
         <div class="d-flex justify-content-between px-2 mb-3">
           <span class="text-primary">Recomendation Car</span>
           <span class="text-primary">View All</span>
         </div>
         <div class="row g-4 gap-3">
-          <div class="card col product-item mx-auto p-3 card-block border-0">
+          <div class="card col product-item mx-auto p-3 card-block desk-card border-0">
             <div class="d-flex justify-content-between">
               <span class="car-name">All New Rush</span>
               <img class="heard" src="/Vector-hard.48bbe5c1.svg">
@@ -457,7 +479,7 @@
             </div>
           </div>
   
-          <div class="card col product-item mx-auto p-3 card-block border-0">
+          <div class="card col product-item mx-auto p-3 card-block desk-card border-0">
             <div class="d-flex justify-content-between">
               <span class="car-name">CR  - V</span>
               <img class="heard" src="/red-hard.90c92e71.svg">
@@ -492,7 +514,7 @@
             </div>
           </div>
   
-          <div class="card col product-item mx-auto p-3 card-block border-0">
+          <div class="card col product-item mx-auto p-3 card-block desk-card border-0">
             <div class="d-flex justify-content-between">
               <span class="car-name">All New Terios</span>
               <img class="heard" src="/Vector-hard.48bbe5c1.svg">
@@ -529,8 +551,7 @@
         </div>
       </div>
 
-      <!-- first mobile slider -->
-       <div class="d-flex justify-content-between title-slider-block px-3">
+       <div class="d-flex justify-content-between title-slider-block px-3" id="recent">
         <span class="title-slider">Recent Car</span>
         <span class="text-primary">View All</span>
       </div>
@@ -651,9 +672,7 @@
         </div>
       </div>
 
-       <!-- second mobile slider -->
-
-       <div class="d-flex justify-content-between title-slider-block px-3">
+       <div class="d-flex justify-content-between title-slider-block px-3" id="recomendation">
           <span class="title-slider">Recomendation Car</span>
           <span class="text-primary">View All</span>
         </div>
@@ -777,8 +796,8 @@
   </div> 
 </main>
 
-<footer>
-  <div class=" footer-container d-flex justify-content-between">
+<footer id="contacts">
+  <div class=" footer-container d-flex justify-content-between m-auto">
       <div class="logo-block mb-5">
         <a href="#" class="logo mb-3">MORENT</a> 
         <p class="footer-text">
@@ -822,7 +841,7 @@
 
   <hr class="mb-5">
 
-  <div class="d-flex flex-wrap justify-content-between tail">
+  <div class="d-flex flex-wrap justify-content-between m-auto tail">
     <div class="privacy d-flex justify-content-between mb-4">
       <span class="fw-bolder">Privacy & Policy</span>
       <span class="fw-bolder">Terms & Condition</span>
