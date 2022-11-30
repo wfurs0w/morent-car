@@ -1,4 +1,4 @@
-.desctop {
+.desktop {
   display: none;
 
   @include onDesctop {
@@ -8,39 +8,44 @@
     display: block;
   }
 
-  .photo {
+  &__photo {
     width: 44px;
     height: 44px;
     position: absolute;
     top: 34px;
     right: 25px;
-
-    img {
-      width: 44px;
-      height: 44px;
-    }
   }
 
-  .desk-form {
+  &__photo-img {
+    width: 44px;
+      height: 44px;
+  }
+
+  &__form-container {
     position: relative;
     width: 492px;
+  }
 
-    .tune {
-      position: absolute;
-      display: block;
-      border-radius: 10px;
-      right: 35px;
-      width: 48px;
-      height: 48px;
-    }
+  &__filter-icon {
+    width: 24px;
+    height: 24px;
+  }
 
-    .filter-icon {
-      width: 24px;
-      height: 24px;
+  &__btn-tune {
+    position: absolute;
+    display: block;
+    border-radius: 10px;
+    right: 35px;
+    width: 48px;
+    height: 48px;
+
+    &:focus, &:active:focus, &.active:focus {
+      outline:none;
+      box-shadow:none;
     }
   }
 
-  .icon {
+  &__icon {
     width: 44px;
     height: 44px;
     position: relative;
@@ -50,42 +55,37 @@
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+
+    &--bell::before {
+      content: url(../images/Notif.svg);
+      position: absolute;
+      top: -7px;
+      right: 8px;
+      display: block;
+      width: 4px;
+      height: 4px;
+    }
   }
 
+  &__input-control {
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    padding-left: 45px;
+    border-radius: 70px;
+    height: 44px;
+  
+    &::placeholder {
+      color: #3D5278;
+    }
+  }
 
-  .bell::before {
-    content: url(../images/Notif.svg);
+  &__search-loop-icon {
     position: absolute;
-    top: -7px;
-    right: 8px;
     display: block;
-    width: 4px;
-    height: 4px;
+    left: 26px;
+    width: 19px;
+    height: 19px;
+    line-height: 44px;
+    text-align: center;
+    color: #aaa;
   }
-
-  .navbar-nav {
-    width: 40%;
-  }
-}
-
-.input-control {
-  border: 1px solid rgba(195, 212, 233, 0.4);
-  padding-left: 45px;
-  border-radius: 70px;
-  height: 44px;
-
-  &::placeholder {
-    color: #3D5278;
-  }
-}
-
-.search-loop {
-  position: absolute;
-  display: block;
-  left: 26px;
-  width: 19px;
-  height: 19px;
-  line-height: 44px;
-  text-align: center;
-  color: #aaa;
 }

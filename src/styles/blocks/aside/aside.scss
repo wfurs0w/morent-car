@@ -29,10 +29,10 @@
     color:#3D5278;
     margin-left: 10px;
     cursor: pointer;
+  }
 
-    span {
-      color:#90A3BF;
-    }
+  &__label-text {
+    color:#90A3BF;
   }
 
   &__last {
@@ -44,7 +44,7 @@
     margin-bottom: 16px;
   }
 
-  .text {
+  &__text {
     font-weight: 600;
     color:#3D5278;
   }
