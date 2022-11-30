@@ -34,12 +34,6 @@
     "brace-style": [2, "1tbs"],
     "arrow-body-style": 0,
     "arrow-parens": 0,
-    "no-param-reassign": [
-      2,
-      {
-        "props": true
-      }
-    ],
     "padding-line-between-statements": [
       2,
       {
@@ -68,7 +62,6 @@
         "next": "*"
       }
     ],
-    "import/prefer-default-export": 0,
-    "standard/no-callback-literal": 0
+    "import/prefer-default-export": 0
   }
 }

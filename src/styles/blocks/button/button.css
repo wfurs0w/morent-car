@@ -1,0 +1,48 @@
+.button-page {
+  height: 56px;
+  width: 140px;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.button-page:focus, .button-page:active:focus, .button-page.active:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: rgba(255, 255, 255, 0.5);
+  -webkit-animation: buttom-circle 1s ease forwards;
+          animation: buttom-circle 1s ease forwards;
+}
+
+@-webkit-keyframes buttom-circle {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(20);
+            transform: scale(20);
+    opacity: 0;
+  }
+}
+
+@keyframes buttom-circle {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(20);
+            transform: scale(20);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=button.css.map */

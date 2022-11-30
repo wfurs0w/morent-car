@@ -1,0 +1,10 @@
+.section-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 32px auto;
+
+  @include onDesctop {
+    width: 72%;
+    margin: 32px auto;
+  }
+}
