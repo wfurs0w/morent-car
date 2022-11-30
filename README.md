@@ -14,7 +14,7 @@ Rent Car landing page, implemented by the Bootstrap library, in two sizes: mobil
 ## Technologies
 - HTML
 - SCSS
-- CSS
+- JS
 
 ## Library 
 - Bootstrap
