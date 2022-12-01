@@ -13,6 +13,7 @@
    },
   "rules": {
     "semi": "off",
+    "no-undef": "off",
     "prefer-const": 2,
     "curly": [2, "all"],
     "quotes": ["error", "single"],

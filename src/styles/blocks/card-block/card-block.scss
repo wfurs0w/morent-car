@@ -1,29 +1,16 @@
-.cards-container {
-  display: none;
-
-  @include onTablet {
-    display: block;
-  }
-
-  .title {
-    color: #90A3BF;
-    font-weight: 600;
-  }
-}
-
-.desk-card {
-  transition: transform 0.3s, box-shadow 0.3s;
-
-  &:hover {
-    transform: scale(1.02);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-}
-
 .card-block {
   width: 30%;
 
-  .car-name {
+  &__desk-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+  }
+
+  &__car-name {
     font-size: 16px;
     letter-spacing: -0.01em;
     font-weight: 600;
@@ -33,28 +20,28 @@
     }
   }
 
-  .heart {
+  &__heart {
     width: 20px;
     height: 20px;
     cursor: pointer;
   }
 
-  .car-model {
+  &__car-model {
     font-weight: 700;
     font-size: 14px;
     color: #90A3BF;
     margin-bottom: 52px;
   }
 
-  .car-img {
+  &__car-img {
     margin-bottom: 52px;
   }
 
-  .car-img2 {
+  &__car-img2 {
     height: 112px;
   }
 
-  .spesification {
+  &__spesification {
     color: #90A3BF;
     font-weight: 500;
     font-size: 12px;
@@ -64,78 +51,81 @@
       font-size: 14px;
       line-height: 20px;
     }
+  }
 
-    .icon {
-      width: 12px;
-      height: 12px;
+  &__spesification-icon {
+    width: 12px;
+    height: 12px;
 
-      @include onDesctop {
-        width: 20px;
-        height: 20px;
-      }
+    @include onDesctop {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__price-span {
+    color: #90A3BF;
+    font-size: 10px;
+
+    @include onDesctop {
+     font-size: 12px;
+    }
+  }
+
+  &__price-gray {
+    font-size: 10px;
+    color: #90A3BF;
+  
+    @include onDesctop {
+      font-size: 12px;
+    }
+  }
+
+  &__price-bold {
+    font-size: 16px;
+    font-weight: 700;
+  
+    @include onTablet {
+      font-size: 12px;
+    }
+  
+    @include onDesctop {
+      font-size: 20px;
+    }
+  }
+
+  &__button {
+    width: 45%;
+    height: 44px;
+
+    @include onTablet {
+      font-size: 12px;
+      line-height: 12px;
+      width: 35%;
     }
 
-    .price {
-      span {
-        color: #90A3BF;
-        font-size: 10px;
-  
-        @include onDesctop {
-         font-size: 12px;
-        }
-      }
-      
-      .price-gray {
-        font-size: 10px;
-        color: #90A3BF;
-  
-        @include onDesctop {
-          font-size: 12px;
-        }
-      }
-
-      .price-bold {
-        font-size: 16px;
-        font-weight: 700;
-
-        @include onTablet {
-          font-size: 12px;
-        }
-    
-        @include onDesctop {
-          font-size: 20px;
-        }
-      }
-    }
-
-    button {
+    @include onDesctop {
       width: 99px;
-      height: 44px;
-
-      @include onTablet {
-        font-size: 12px;
-        line-height: 12px;
-        width: 53px;
-      }
-
-      @include onDesctop {
-        width: 99px;
-        font-size: 12px;
-      }
+      font-size: 12px;
     }
   }
-}
 
-.carousel-mobile {
-  display: block;
-
-  @include onTablet {
-    display: none !important;
+  &__carousel-mobile {
+    display: block;
+  
+    @include onTablet {
+      display: none !important;
+    }
   }
-}
 
-.title-slider-block {
-  .title-slider {
+  &__title-slider-block {
+    
+    @include onTablet {
+      display: none !important;
+    }
+  }
+
+  &__title-slider {
     color: #90A3BF;
     font-weight: 600;
     font-size: 14px;
@@ -144,9 +134,5 @@
     & + span {
       font-size: 12px;
     }
-  }
-
-  @include onTablet {
-    display: none !important;
   }
 }

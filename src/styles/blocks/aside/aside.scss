@@ -1,11 +1,12 @@
 .aside {
   width: 25%;
+  max-width: 400px;
   border-right: 1px solid #F3F5F7;
   margin-right: 30px;
   padding: 32px;
   display: none;
 
-  @include onTablet {
+  @include onDesctop {
     display: block;
   }
 
