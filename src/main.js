@@ -1,5 +1,25 @@
 'use strict';
 
+$(document).ready(function(){
+  $('.slider__for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider__nav'
+  });
+});
+
+$('.slider__nav').slick({
+  slidesToShow: 2,
+  nextArrow: false,
+  prevArrow: false,
+  slidesToScroll: 1,
+  asNavFor: '.slider__for',
+  centerMode: true,
+  focusOnSelect: true
+});
+
 const sliderValue = document.getElementById('range-value');
 const inputSlider = document.getElementById('customRange2');
 

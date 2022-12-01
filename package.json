@@ -16,6 +16,6 @@
     "@parcel/transformer-sass": "^2.8.0",
     "eslint": "^8.27.0",
     "gh-pages": "^4.0.0",
-    "parcel": "^2.8.0"
+    "parcel": "latest"
   }
 }
