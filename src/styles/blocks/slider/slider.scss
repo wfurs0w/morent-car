@@ -1,0 +1,36 @@
+.slider {
+  width: 100%;
+  max-width: 492px;
+  min-height: 320px;
+  margin: 0 auto 32px;
+  position: relative;
+
+  @include onTablet {
+    margin: 0;
+    width: 49%;
+  }
+
+  &__for &__for-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-height: 360px;
+  }
+  
+  &__nav &__nav-img {
+    height: 64px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+
+    @include onDesctop {
+      height: 124px;
+      width: 100%;
+    } 
+  } 
+  
+  &__nav &__nav-item {
+    margin: 0 10px;
+  }
+}
