@@ -18,3 +18,5 @@ Rent Car landing page, implemented by the Bootstrap library, in two sizes: mobil
 
 ## Library 
 - Bootstrap
+- Slick slider
+- jQuery
