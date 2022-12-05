@@ -1,5 +1,6 @@
 .cards-container {
   display: none;
+  width: 100%;
 
   @include onTablet {
     display: block;
