@@ -13,6 +13,8 @@
   &__container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
     width: 100%;
     max-width: 1200px;
 
@@ -62,6 +64,9 @@
 
   &__info-block {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     @include onDesctop {
       width: 46%;
@@ -111,6 +116,10 @@
 
   .tail {
     max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
     
     .privacy {
       width: 100%;

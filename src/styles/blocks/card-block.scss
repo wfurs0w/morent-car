@@ -1,13 +1,60 @@
+
+.cards-container {
+  display: none;
+
+  @include onTablet {
+    display: block;
+  }
+
+  &__recent {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding-bottom: 32px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  &__recomendation {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  &__title {
+    color: #90A3BF;
+    font-weight: 600;
+  }
+}
+
+.cars-container {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
 .card-block {
   width: 30%;
+  padding: 24px;
+  border: 0;
 
   &__desk-card {
+    border: 0;
     transition: transform 0.3s, box-shadow 0.3s;
   
     &:hover {
       transform: scale(1.02);
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
+  }
+
+  &__car-info {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__car-name {
@@ -51,6 +98,12 @@
       font-size: 14px;
       line-height: 20px;
     }
+  }
+
+  &__params {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
   }
 
   &__spesification-icon {

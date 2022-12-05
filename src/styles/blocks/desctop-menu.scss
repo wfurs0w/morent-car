@@ -1,11 +1,17 @@
 .desktop {
   display: none;
+  width: 100%;
 
   @include onDesctop {
     max-width: 1340px;
     margin: 0 auto;
     position: relative;
     display: block;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: end;
   }
 
   &__photo {
@@ -23,6 +29,7 @@
 
   &__form-container {
     position: relative;
+    margin-left: 64px;
     width: 492px;
   }
 

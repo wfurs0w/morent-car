@@ -1,10 +1,14 @@
 .section-middle {
   width: 100%;
   min-height: 367px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   height: fit-content;
   margin: 0 auto;
   border-radius: 10px;
   padding: 16px;
+  background-color: #fff;
 
   @include onTablet {
     width: 100%;
@@ -12,22 +16,29 @@
     padding: 25px;
   }
   
-  &__header {
+  &__title {
     font-size: 20px;
+    font-weight: 700;
   }
 
   &__count {
+    display: inline-block;
     width: 44px;
     height: 28px;
     font-size: 14px;
     text-align: center;
     line-height: 28px;
     border-radius: 4px;
+    color: #fff;
   }
 
   &__user {
     width: 100%;
     padding-left: 52px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 
     @include onDesctop {
       padding-left: 64px;
@@ -35,6 +46,9 @@
   }
 
   &__icon {
+    display: block;
+    position: absolute;
+    left: 0;
     width: 44px;
     height: 44px;
 
@@ -42,6 +56,17 @@
       width: 56px;
       height: 56px;
     }
+  }
+
+  &__user-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  &__user-position {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__user-name {
@@ -66,14 +91,15 @@
 
   &__light-text {
     line-height: 24px;
+    color: #90A3BF;
 
     @include onDesctop {
       font-size: 14px;
     }
   }
 
-  &__feedback {
-    color: $navy-blue;
+  &__comment {
+    color: #3d5278;
     font-weight: 400;
     font-size: 12px;
     line-height: 200%;
@@ -102,6 +128,8 @@
 
   &__select-block {
     width: 101px;
+    margin: 0 auto;
+    position: relative;
   }
 
   &__select-img {
@@ -109,10 +137,13 @@
     right: 6px;
     width: 10px;
     height: 5px;
+    position: absolute;
   }
 
   &__select-span {
     width: 100px;
+    display: inline-block;
+    text-align: center;
     font-size: 14;
     color: #90A3BF;
     cursor: pointer;

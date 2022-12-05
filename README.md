@@ -1,22 +1,24 @@
-# Rent Car
+# Morent Rent Car
 
-Rent Car landing page, implemented by the Bootstrap library, in two sizes: mobile(370px) and desktop(1440px).The mobile version has page navigation in the burger menu and two carousel.
+- [DEMO LINK](https://wfurs0w.github.io/morent-car/)
+- [DESIGN](https://www.figma.com/file/uA7kRTj5367RW5JCChUc9z/Car-Rent-Website-Design---Pickolab-Studio-(Community)-(Copy)?node-id=9%3A15394&t=RwLggiO4f6H1EkXK-0)
 
-- Here is [DEMO LINK](https://oksana-logos-frontend.github.io/rent_car/)
-- Here is [Figma](https://www.figma.com/file/uA7kRTj5367RW5JCChUc9z/Car-Rent-Website-Design---Pickolab-Studio-(Community)-(Copy)?node-id=9%3A15394&t=RwLggiO4f6H1EkXK-0)
+## About
 
-## Installation
+This layout implemented by the Bootstrap library, in two sizes: 
+- 1440px
+- 370px 
 
-- Clone project
-- Run npm install
-- Run npm start 
+## Technologies used:
 
-## Technologies
 - HTML
 - SCSS
-- JS
-
-## Library 
+- JavaScript 
 - Bootstrap
-- Slick slider
-- jQuery
+- Slick
+
+## Get the initial code:
+
+- Clone the repo
+- Run npm install to install the dependencies
+- Run npm start to start localhost

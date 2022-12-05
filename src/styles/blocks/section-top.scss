@@ -20,10 +20,14 @@
   } 
   
   &__right-block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     width: 100%;
     height: fit-content;
+    padding: 24px;
     margin: 0 auto;
-    background: #FFFFFF;
+    background: #fff;
     border-radius: 10px;
 
     @include onTablet {
@@ -34,10 +38,13 @@
   }
 
   &__title-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
   }
 
-  &__tight-title {
+  &__title {
     font-size: 20px;
 
     @include onDesctop {
@@ -46,13 +53,15 @@
   }
 
   &__heart {
+    width: 20px;
+    height: 20px;
     cursor: pointer;
   }
 
-  &__stars-block {
+  &__stars {
     span {
       font-size: 12px;
-      color: $navy-blue;
+      color: #3d5278;
       font-weight: 500;
 
       @include onDesctop {
@@ -62,7 +71,7 @@
   }
 
   &__right-description {
-    color: $navy-blue;
+    color: #3d5278;
     font-weight: 400;
     font-size: 12px;
     line-height: 200%;
@@ -71,6 +80,16 @@
     @include onDesctop {
     font-size: 20px;
     }
+  }
+
+  &__options-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__options-top {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__price {
@@ -84,20 +103,22 @@
     }
   }
 
-  &__price-gray {
-    font-size: 12px;
-    color: #90A3BF;
-    @include onDesctop {
-      font-size: 16px;
-    }
-  }
-
-  &__price-bold {
+  &__price-actual {
     font-size: 20px;
     font-weight: 700;
 
     @include onDesctop {
       font-size: 28px;
+    }
+  }
+
+  &__price-old {
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #90A3BF;
+    @include onDesctop {
+      font-size: 16px;
     }
   }
 
@@ -115,7 +136,7 @@
   &__dark-text {
     font-weight: 600;
     font-size: 12px;
-    color:$navy-blue;
+    color: #3d5278;
     letter-spacing: -0.02em;
   
     @include onDesctop {
