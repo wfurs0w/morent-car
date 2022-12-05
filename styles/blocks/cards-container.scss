@@ -1,0 +1,7 @@
+.cards-container {
+  display: none;
+
+  @include onTablet {
+    display: block;
+  }
+}

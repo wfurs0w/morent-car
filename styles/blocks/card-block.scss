@@ -1,0 +1,191 @@
+
+.cards-container {
+  display: none;
+
+  @include onTablet {
+    display: block;
+  }
+
+  &__recent {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding-bottom: 32px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  &__recomendation {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  &__title {
+    color: #90A3BF;
+    font-weight: 600;
+  }
+}
+
+.cars-container {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.card-block {
+  width: 30%;
+  padding: 24px;
+  border: 0;
+
+  &__desk-card {
+    border: 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+  
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+  }
+
+  &__car-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__car-name {
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+
+    @include onDesctop {
+      font-size: 20px;
+    }
+  }
+
+  &__heart {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  &__car-model {
+    font-weight: 700;
+    font-size: 14px;
+    color: #90A3BF;
+    margin-bottom: 52px;
+  }
+
+  &__car-img {
+    margin-bottom: 52px;
+  }
+
+  &__car-img2 {
+    height: 112px;
+  }
+
+  &__spesification {
+    color: #90A3BF;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+
+    @include onDesctop {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__params {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  &__spesification-icon {
+    width: 12px;
+    height: 12px;
+
+    @include onDesctop {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__price-span {
+    color: #90A3BF;
+    font-size: 10px;
+
+    @include onDesctop {
+     font-size: 12px;
+    }
+  }
+
+  &__price-gray {
+    font-size: 10px;
+    color: #90A3BF;
+  
+    @include onDesctop {
+      font-size: 12px;
+    }
+  }
+
+  &__price-bold {
+    font-size: 16px;
+    font-weight: 700;
+  
+    @include onTablet {
+      font-size: 12px;
+    }
+  
+    @include onDesctop {
+      font-size: 20px;
+    }
+  }
+
+  &__button {
+    width: 45%;
+    height: 44px;
+
+    @include onTablet {
+      font-size: 12px;
+      line-height: 12px;
+      width: 35%;
+    }
+
+    @include onDesctop {
+      width: 99px;
+      font-size: 12px;
+    }
+  }
+
+  &__carousel-mobile {
+    display: block;
+  
+    @include onTablet {
+      display: none !important;
+    }
+  }
+
+  &__title-slider-block {
+    
+    @include onTablet {
+      display: none !important;
+    }
+  }
+
+  &__title-slider {
+    color: #90A3BF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+  
+    & + span {
+      font-size: 12px;
+    }
+  }
+}

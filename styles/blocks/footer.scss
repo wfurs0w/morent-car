@@ -1,0 +1,143 @@
+.footer {
+  padding: 40px 30px 24px;
+  background: #F6F7F9;
+
+  @include onTablet {
+    background: white;
+  }
+
+  @include onDesctop {
+    padding: 80px 60px 60px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+
+    @include onDesctop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo-block {
+    width: 100%;
+
+    @include onDesctop {
+      width: 25%;
+    }
+  }
+
+  &__logo {
+    height: fit-content;
+    line-height: 100%;
+  }
+
+  &__ul-block {
+    list-style: none;
+
+    li {
+      cursor: pointer;
+      transition: color 1s;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  &__text {
+    color: #90A3BF;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: -0.01em;
+
+    @include onDesctop {
+      font-size: 16px;
+    }
+  }
+
+  &__info-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include onDesctop {
+      width: 46%;
+    }
+  }
+
+  &__info-header {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  &__about {
+    width: 50%;
+
+    @include onTablet {
+      width: 30%;
+    }
+  }
+
+  &__socials {
+    width: 28%;
+
+    @include onDesctop {
+      width: 30%;
+      order: 1;
+    }
+  }
+
+  &__community {
+    width: 100%;
+    margin-top: 40px;
+
+    @include onTablet {
+      width: 30%;
+      margin-top: 0;
+    }
+  }
+
+  hr {
+    display: none;
+
+    @include onTablet {
+      display: block;
+    }
+  }
+
+  .tail {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+    .privacy {
+      width: 100%;
+      font-size: 12px;
+  
+      @include onTablet {
+        width: 30%;
+        order: 1;
+      }
+    }
+  
+    .rights {
+      width: 100%;
+      font-size: 12px;
+  
+      @include onTablet {
+        width: 30%;
+      }
+    }
+  }
+}

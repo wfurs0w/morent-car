@@ -1,0 +1,155 @@
+.section-middle {
+  width: 100%;
+  min-height: 367px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: fit-content;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 16px;
+  background-color: #fff;
+
+  @include onTablet {
+    width: 100%;
+    height: fit-content;
+    padding: 25px;
+  }
+  
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__count {
+    display: inline-block;
+    width: 44px;
+    height: 28px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 4px;
+    color: #fff;
+  }
+
+  &__user {
+    width: 100%;
+    padding-left: 52px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @include onDesctop {
+      padding-left: 64px;
+    }   
+  }
+
+  &__icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 44px;
+    height: 44px;
+
+    @include onDesctop {
+      width: 56px;
+      height: 56px;
+    }
+  }
+
+  &__user-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  &__user-position {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__user-name {
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+
+    @include onDesctop {
+      font-size: 20px;
+    }
+  }
+
+  &__star {
+    width: 10px;
+    height: 10px;
+
+    @include onDesctop {
+      width: 16px;
+    height: 16px;
+    }
+  }
+
+  &__light-text {
+    line-height: 24px;
+    color: #90A3BF;
+
+    @include onDesctop {
+      font-size: 14px;
+    }
+  }
+
+  &__comment {
+    color: #3d5278;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: -0.02em;
+
+    @include onDesctop {
+      font-size: 12px;
+    }
+
+    &--on-phone {
+      display: block;
+  
+      @include onDesctop {
+        display: none;
+      }
+    }
+
+    &--on-desctop {
+      display: none;
+  
+      @include onDesctop {
+        display: block;
+      }
+    }
+  }
+
+  &__select-block {
+    width: 101px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__select-img {
+    top: 12px;
+    right: 6px;
+    width: 10px;
+    height: 5px;
+    position: absolute;
+  }
+
+  &__select-span {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14;
+    color: #90A3BF;
+    cursor: pointer;
+
+    @include onDesctop {
+      font-size: 16px;
+    }
+  }
+}

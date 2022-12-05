@@ -1,0 +1,98 @@
+.desktop {
+  display: none;
+  width: 100%;
+
+  @include onDesctop {
+    max-width: 1340px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: end;
+  }
+
+  &__photo {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 34px;
+    right: 25px;
+  }
+
+  &__photo-img {
+    width: 44px;
+      height: 44px;
+  }
+
+  &__form-container {
+    position: relative;
+    margin-left: 64px;
+    width: 492px;
+  }
+
+  &__filter-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__btn-tune {
+    position: absolute;
+    display: block;
+    border-radius: 10px;
+    right: 35px;
+    width: 48px;
+    height: 48px;
+
+    &:focus, &:active:focus, &.active:focus {
+      outline:none;
+      box-shadow:none;
+    }
+  }
+
+  &__icon {
+    width: 44px;
+    height: 44px;
+    position: relative;
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+    &--bell::before {
+      content: url(../images/Notif.svg);
+      position: absolute;
+      top: -7px;
+      right: 8px;
+      display: block;
+      width: 4px;
+      height: 4px;
+    }
+  }
+
+  &__input-control {
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    padding-left: 45px;
+    border-radius: 70px;
+    height: 44px;
+  
+    &::placeholder {
+      color: #3D5278;
+    }
+  }
+
+  &__search-loop-icon {
+    position: absolute;
+    display: block;
+    left: 26px;
+    width: 19px;
+    height: 19px;
+    line-height: 44px;
+    text-align: center;
+    color: #aaa;
+  }
+}

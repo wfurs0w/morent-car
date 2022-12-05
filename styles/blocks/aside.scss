@@ -1,0 +1,62 @@
+.aside {
+  width: 25%;
+  max-width: 400px;
+  background-color: #fff;
+  border-right: 1px solid #F3F5F7;
+  margin-right: 30px;
+  padding: 32px;
+  display: none;
+
+  @include onDesctop {
+    display: block;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: #94A7CB;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 28px;
+  }
+
+  .form-check {
+    margin-bottom: 32px;
+  }
+
+  &__checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #90A3BF;
+    cursor: pointer;
+  }
+
+  &__label {
+    font-weight: 600;
+    color:#3D5278;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  &__label-text {
+    color:#90A3BF;
+  }
+
+  &__last {
+    margin-bottom: 56px;
+  }
+
+  &__range {
+    height: 12px;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-weight: 600;
+    color:#3D5278;
+  }
+}
